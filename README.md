@@ -1,2 +1,2 @@
-# aryanarya.github.io
+# aryanaryachoudhary.github.io
 Profile Website
