@@ -1,6 +1,7 @@
 /* globals */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Titillium+Web:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 * {
   margin: 0;
@@ -148,6 +149,7 @@ body {
   grid-gap: 6rem;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   align-items: start;
+  margin: auto;
 }
 
 .grid-item {
@@ -194,15 +196,20 @@ body {
   display: block;
   width: 100%;
   padding: 1.5rem;
-  font-size: 2rem;
+  font-size: 1rem;
+  font-family: "Titillium Web", serif;
   text-align: center;
-  color: #3363ff;
   background-color: #d8e0fd;
   border: none;
   border-radius: 0.4rem;
   transition: 0.2s;
   cursor: pointer;
   letter-spacing: 0.1rem;
+}
+
+.card-btn a {
+  color: #3d3d3d;
+  text-decoration: none;
 }
 
 .card-btn span {
@@ -328,6 +335,91 @@ body {
   }
 }
 
+.wrapper{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+  max-width: 550px;
+  background: #d8e0fd;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  margin-bottom: 20px;
+}
+
+.wrapper .title h1{
+  color: #3d3d3d;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.contact-form{
+  display: flex;
+}
+
+.input-fields{
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+}
+
+.input-fields,
+.msg{
+  width: 48%;
+}
+
+.input-fields .input,
+.msg textarea{
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid #3d3d3d;
+  padding: 10px;
+  color: #3d3d3d;
+  width: 100%;
+}
+
+.msg textarea{
+  height: 212px;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #3d3d3d;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #3d3d3d
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #3d3d3d;
+}
+
+.btn {
+    background: #0d0d0d;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px){
+  .contact-form{
+    flex-direction: column;
+  }
+  .msg textarea{
+    height: 80px;
+  }
+  .input-fields,
+  .msg{
+    width: 100%;
+  }
+}
 
 /*Footer Section*/
 
