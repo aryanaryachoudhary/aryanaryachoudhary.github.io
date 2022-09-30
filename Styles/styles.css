@@ -144,12 +144,20 @@ body {
 
 
 .grid {
-  display: grid;
+  /*display: grid;
   width: 114em;
   grid-gap: 6rem;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   align-items: start;
-  margin: auto;
+  margin: auto;*/
+  margin: 0 auto;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));    grid-auto-rows: auto;
+  gap: 20px;
+  font-family: sans-serif;
+  padding-top: 30px;
+  padding-bottom: 40px;
 }
 
 .grid-item {
@@ -169,7 +177,7 @@ body {
 .card-img {
   display: block;
   width: 100%;
-  height: 20rem;
+  height: 10rem;
   object-fit: cover;
 }
 
